@@ -1,0 +1,39 @@
+[project]
+name = "core-lab"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "zhenndbc", email = "zhenndbc@noreply.gitcode.com" }
+]
+dependencies = [
+    "ollama>=0.4.7",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=25.1.0",
+    "flake8>=7.1.2",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/core_lab"]
+
+# pyproject.toml
+[tool.rye.scripts]
+web = "uvicorn src.fastapi_project.main:app --reload"
+start = "python src/core_lab/__init__.py"
+fmt = "black ."
+
+[[tool.rye.sources]]
+name = "default"
+url = "https://mirrors.aliyun.com/pypi/simple/"
