@@ -1,0 +1,36 @@
+[project]
+name = "pcode"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "fastapi[all]>=0.115.12",
+    "dashscope>=1.10.0",
+    "typing>=3.7.4.3",
+    "pillow>=10.0.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.15.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.rye.scripts]
+dev = "uvicorn app.main:app --reload --port 8000"
+format = "black ."
+
+[[tool.rye.sources]]
+name = "default"
+url = "https://mirrors.aliyun.com/pypi/simple/"

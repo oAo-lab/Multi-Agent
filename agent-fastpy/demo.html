@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
+
+    <!-- 导航栏 -->
+    <nav class="bg-indigo-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">我的个人主页</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="text-white hover:text-indigo-200 transition duration-300">关于我</a></li>
+                <li><a href="#projects" class="text-white hover:text-indigo-200 transition duration-300">项目</a></li>
+                <li><a href="#contact" class="text-white hover:text-indigo-200 transition duration-300">联系我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-8">欢迎来到我的个人主页</h1>
+            <p class="text-lg text-gray-700 text-center">
+                这里是展示我的技能、经验和项目的平台。
+            </p>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">关于我</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <img src="https://via.placeholder.com/300" alt="头像" class="rounded-full w-48 h-48 mx-auto">
+                    <p class="text-gray-700">
+                        我是一名热爱前端开发的开发者。我喜欢用代码创造美好的用户体验，并不断学习新技术。
+                    </p>
+                </div>
+                <div>
+                    <p class="text-gray-700">
+                        技能：HTML、CSS、JavaScript、React、Tailwind CSS<br>
+                        爱好：阅读、旅行、编程<br>
+                        目标：成为一名优秀的全栈开发者
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目部分 -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">我的项目</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-indigo-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">项目一</h3>
+                    <p class="text-gray-700">
+                        这是一个基于 React 的待办事项应用，用户可以轻松管理任务。
+                    </p>
+                </div>
+                <div class="bg-indigo-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">项目二</h3>
+                    <p class="text-gray-700">
+                        这是一个使用 Tailwind CSS 构建的响应式博客网站。
+                    </p>
+                </div>
+                <div class="bg-indigo-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">项目三</h3>
+                    <p class="text-gray-700">
+                        这是一个在线购物车系统，支持商品添加、删除和结算功能。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我部分 -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">联系我</h2>
+            <form action="#" class="space-y-4">
+                <input type="text" placeholder="你的名字"
+                    class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-600">
+                <input type="email" placeholder="你的邮箱"
+                    class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-600">
+                <textarea placeholder="你的留言" rows="5"
+                    class="w-full p-2 border rounded-md resize-none focus:outline-none focus:border-indigo-600"></textarea>
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">提交</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="bg-indigo-600 text-white py-4 text-center">
+        <p>&copy; 2023 我的个人主页. 版权所有.</p>
+    </footer>
+
+</body>
+
+</html>
