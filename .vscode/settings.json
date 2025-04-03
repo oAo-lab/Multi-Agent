@@ -1,5 +1,116 @@
 {
-    "python.analysis.extraPaths": [
-        "./src/core_agent/agent_playground"
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Comments",
+        "scope": "comment, punctuation.definition.comment",
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#4dc043"
+        }
+      }
     ]
+  },
+  "editor.emptySelectionClipboard": true,
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 4,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineNumbers": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.formatOnSaveMode": "file",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 120,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "jsp": "html",
+    "javascript": "html",
+    "vue-html": "html",
+    "vue": "html",
+    "wxml": "html"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "git.ignoreMissingGitWarning": true,
+  "path-intellisense.mappings": {
+    ".": "${workspaceFolder}"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "'Fira Code', Consolas",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.size": "fit",
+  "editor.minimap.renderCharacters": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "path-intellisense.extensionOnImport": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.filterGraceful": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showColors": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "explorer.confirmPasteNative": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "1984 - Fancy",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "vsicons.dontShowNewVersionMessage": true
 }
